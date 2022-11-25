@@ -3,7 +3,7 @@
 - If you have any questions about the code, please email: g192e1654k@gmail.com
 ===========================================
 # Result
-- ![image](https://github.com/Evanston0624/Multimodal-Emotion-Recognition/edit/main/text/result/SER.png)
+- ![image](https://github.com/Evanston0624/Multimodal-Emotion-Recognition/result/SER.png)
 
 ===========================================
 # Introduction
