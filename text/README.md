@@ -5,7 +5,7 @@
 ===========================================
 # Result
 - 5fold test
-![image](https://github.com/Evanston0624/Multimodal-Emotion-Recognition/edit/main/text/result/system_5fold_cm.png)
+![image](https://github.com/Evanston0624/Multimodal-Emotion-Recognition/blob/main/text/result/system_5fold_cm.png)
 
 ===========================================
 # Introduction 
