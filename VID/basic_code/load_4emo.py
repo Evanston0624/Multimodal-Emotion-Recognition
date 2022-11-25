@@ -86,35 +86,21 @@ def afew_faces_baseline(root_train, list_train, batchsize_train, root_eval, list
         batch_size=batchsize_eval, shuffle=False,
         num_workers=8, pin_memory=True)
     return train_loader, val_loader
-
-def afew_faces_fan(root_train, list_train, batchsize_train, root_eval, list_eval, batchsize_eval):
-
-    train_dataset = data_generator.TripleImageDataset(
-        video_root=root_train,
-        video_list=list_train,
-        rectify_label=cate2label['AFEW'],
-        transform=transforms.Compose([transforms.Resize(224), transforms.RandomHorizontalFlip(), transforms.ToTensor()]),
-    )
-
+#Modify Here
+def afew_faces_fan(root_eval, list_eval, batchsize_eval):
     val_dataset = data_generator.VideoDataset(
         video_root=root_eval,
         video_list=list_eval,
         rectify_label=cate2label['AFEW'],
         transform=transforms.Compose([transforms.Resize(224), transforms.ToTensor()]),
         csv=False)
-
-    train_loader = torch.utils.data.DataLoader(
-        train_dataset,
-        batch_size=batchsize_train, shuffle=True,
-        num_workers=8, pin_memory=True, drop_last=True)
-
     val_loader = torch.utils.data.DataLoader(
         val_dataset,
         batch_size=batchsize_eval, shuffle=False,
         num_workers=8, pin_memory=True)
 
 
-    return train_loader, val_loader
+    return  val_loader
 
 
 def model_parameters(_structure, _parameterDir):
