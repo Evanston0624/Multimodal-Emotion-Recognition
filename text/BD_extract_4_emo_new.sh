@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 BD_exportEmoProfile.py --text_file BDdata.txt --bert_model bert-base-chinese --label_num 4 --max_seq_length 95 --eval_batch_size 8 --load_config bert_result/total/balance/bert_config/32220bert_config.json --load_model bert_result/total/balance/bert_model/32220pytorch_model.bin --do_eval --object_type sys
